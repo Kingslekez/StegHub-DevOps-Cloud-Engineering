@@ -12,7 +12,8 @@ Saved using (Ctrl+O, Enter, Ctrl+X), then I visited:
 http://23.23.9.29/info.php
 ```
 I used the full PHP configuration page, confirming Apache, PHP, and MySQL integration are all working. That completed my LAMP stack.
- 
+
+![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/c629ffb7bc12f6e238a9a9fe9fda0a92faa8a9b1/LAMP%20STACK/Images/PHP%20Installation.png) 
 
 PHP 8.5.4 is installed and working. I confirmed via php -v, with Zend Engine and OPcache loaded.
 My LAMP stack is now fully installed: Apache, MySQL, and PHP
