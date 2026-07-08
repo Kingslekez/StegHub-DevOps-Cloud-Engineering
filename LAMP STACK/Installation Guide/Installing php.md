@@ -11,6 +11,8 @@ Saved using (Ctrl+O, Enter, Ctrl+X), then I visited:
 ```bash
 http://23.23.9.29/info.php
 ```
+
+
 I used the full PHP configuration page, confirming Apache, PHP, and MySQL integration are all working. That completed my LAMP stack.
 
 ![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/c629ffb7bc12f6e238a9a9fe9fda0a92faa8a9b1/LAMP%20STACK/Images/PHP%20Installation.png) 
@@ -29,7 +31,7 @@ Saved using (Ctrl+O, Enter, Ctrl+X), then visited:
 ```bash
 http://23.23.9.29/info.php
 ```
- 
+![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/b25f85769f4d2c8de84fc8a47912405e49145248/LAMP%20STACK/Images/PHP%20Version.png)
 
 I created a new directory 
 
@@ -73,7 +75,7 @@ sudo a2dissite 000-default
 sudo systemctl reload apache2
 ```
 
- 
+ ![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/b25f85769f4d2c8de84fc8a47912405e49145248/LAMP%20STACK/Images/PHP%20Directory%20.png)
 
 •	Virtual host config (projectlamp.conf) was created with the right content
 
@@ -89,6 +91,7 @@ I visited my instance's IP in the browser:
 http://23.23.9.29
 ```
 I saw "Hello LAMP Project" displayed instead of the old Apache default page. That confirmed my custom virtual host is live and serving correctly.
+![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/b25f85769f4d2c8de84fc8a47912405e49145248/LAMP%20STACK/Images/Custom%20Virtual%20Host%20Confirmation%20.png)
  
 The command ran successfully — both curl calls completed.
 Since I chown'd /var/www/projectlamp to my user earlier, the redirect into index.html worked fine without permission errors.
@@ -98,13 +101,15 @@ http://23.23.9.2
 ```
 I saw: "Hello LAMP from hostname ec2-23-23-9-29.compute-1.amazonaws.com with public IP 23.23.9.29”, confirming that my page is dynamically pulling instance metadata.
 
- 
+ ![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/b25f85769f4d2c8de84fc8a47912405e49145248/LAMP%20STACK/Images/Page%20is%20dynamically%20pulling%20instance%20metadata.png)
+
+ ![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/b25f85769f4d2c8de84fc8a47912405e49145248/LAMP%20STACK/Images/Page%20after%20new%20php%20file.png)
 
  The command history shows I:
 1.	Edited dir.conf to prioritize PHP files
 2.	Reloaded Apache (success, no errors)
 3.	Ran vim /var/www/projectlamp/index.php — but without sudo
- 
+ ![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/b25f85769f4d2c8de84fc8a47912405e49145248/LAMP%20STACK/Images/New%20php%20file.png)
 
 PHP 8.5.4 is properly loaded as an Apache 2 Handler  
 Configured via /etc/php/8.5/apache2/php.ini  
@@ -115,4 +120,4 @@ I deleted this test file since phpinfo() exposes server internals:
 ```bash
 sudo rm /var/www/projectlamp/info.php
 ```
- 
+![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/b25f85769f4d2c8de84fc8a47912405e49145248/LAMP%20STACK/Images/PHP%20Page%20properly%20loaded.png)
