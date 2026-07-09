@@ -1,6 +1,6 @@
 Installing PHP using sudo apt install php-fpm php-mysql
 
-**php-fpm:** Installs PHP FastCGI Process Manager, which allows Nginx to process PHP files. 
+**php-fpm:** Installs PHP FastCGI Process Manager, which allows Nginx to process PHP files.  
 **php-mysql:** Installs the PHP extension needed for PHP applications to connect to MySQL databases.
 
 ![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/9a4fb8350d7e8c945768f78cd338ace1ebf210b8/LEMP%20STACK/Images/Install%20PHP.png)
