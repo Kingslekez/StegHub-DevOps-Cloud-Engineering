@@ -60,7 +60,7 @@ Reload Nginx
 ![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/4fec78c96e1bee6c0d63501fac740227f6802ac4/LEMP%20STACK/Images/Enable%20and%20disable%20Nginx%20site.png)
  
 The long <mark>echo</mark> command dynamically fetches information from the AWS EC2 Metadata Service:
-•	Public hostname (DNS name) 
+•	Public hostname (DNS name)   
 •	Public IPv4 address 
 and writes them into the page.
 
