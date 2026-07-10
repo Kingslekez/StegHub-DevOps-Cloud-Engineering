@@ -12,7 +12,7 @@ sudo mkdir /var/www/projectLEMP
 
 •	The command creates a new folder named projectLEMP inside <mark>/var/www</mark>
 
- 
+ ![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/4fec78c96e1bee6c0d63501fac740227f6802ac4/LEMP%20STACK/Images/Website%20directory.png)
 
 Remember to give yourself ownership using
 ```bash
@@ -50,20 +50,22 @@ server {
 ```
 
 Enable the new Nginx site and test the Nginx configuration
- 
+ ![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/4fec78c96e1bee6c0d63501fac740227f6802ac4/LEMP%20STACK/Images/Enable%20the%20new%20Nginx%20site%20and%20test%20the%20Nginx%20configuration.png)
 
 Disable the default Nginx site using the command:
 ```bash
 sudo unlink /etc/nginx/sites-enabled/default
 ```
 Reload Nginx
+![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/4fec78c96e1bee6c0d63501fac740227f6802ac4/LEMP%20STACK/Images/Enable%20and%20disable%20Nginx%20site.png)
  
 The long <mark>echo</mark> command dynamically fetches information from the AWS EC2 Metadata Service:
 •	Public hostname (DNS name) 
 •	Public IPv4 address 
 and writes them into the page.
 
- 
+![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/4fec78c96e1bee6c0d63501fac740227f6802ac4/LEMP%20STACK/Images/Fetches%20information%20from%20the%20AWS%20EC2%20Metadata%20Service.png) 
 
 Fetched information from the long <mark>echo</mark>  command
  
+![Image alt](https://github.com/Kingslekez/StegHub-DevOps-Cloud-Engineering/blob/4fec78c96e1bee6c0d63501fac740227f6802ac4/LEMP%20STACK/Images/Fetched%20information%20on%20web%20page.png)
