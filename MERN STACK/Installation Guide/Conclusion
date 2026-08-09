@@ -1,0 +1,13 @@
+This lab successfully demonstrates building a full-stack MERN (MongoDB, Express, React, Node.js) Todo application from scratch. Key accomplishments include:
+
+Setting up a Node.js/Express backend with RESTful API endpoints (GET, POST, DELETE)
+
+Integrating MongoDB Atlas for cloud database storage with Mongoose ODM
+
+Creating a React frontend with components for input, listing, and deleting todos
+
+Using concurrently to run both servers simultaneously during development
+
+Implementing full CRUD functionality with proper error handling and validation
+
+The completed application provides a functional Todo manager where users can add, view, and delete tasks, showcasing core MERN stack concepts in practice.
